@@ -120,4 +120,12 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="label4.ToolTip" xml:space="preserve">
+    <value>It is not required to provide input here, and if the input is left empty, leave 'Not Applicable' selected.
+Otherwise enter a phrase, a word, or other input desired for use in the generated password.
+
+• Easy (As Written): will leave the input as in and include additional padding to make the password more secure.
+• Camel Caps (CamelCaps): will take a phraseinclude spaces and link them together, capitalising the first letter of each word.
+• 1337Speak (1337 5Pe4|&lt;): will modify the input to match internet style 1337 speak, enhancing security of a pass word or phrase.</value>
+  </data>
 </root>
