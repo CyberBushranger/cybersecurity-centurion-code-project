@@ -36,5 +36,10 @@ namespace C__Password_Generator__GUI_
         {
 
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
