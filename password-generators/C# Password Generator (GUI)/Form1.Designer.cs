@@ -46,6 +46,7 @@
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -54,6 +55,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.helpLabel = new System.Windows.Forms.Label();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
@@ -65,6 +67,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.presetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -101,14 +104,13 @@
             this.comboBox1.DropDownWidth = 365;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Personal (Social Media, Personal Email) - Easy/LowSec",
-            "Web/Online (Website Logins, Gaming Accounts) - Simple/LowSec",
-            "Work (Work Accounts, Corporate Accounts/Email) - Basic/MedSec",
-            "Work Secure (Higher Security Work Logins) - Moderate/MedSec",
-            "Banking/Financial (Incl. Gaming/Accounts with Credit Cards Linked) - Secure/HiSec" +
-                "",
-            "Priveleged Work (Administrators or High Security Accoutns) - Advanced/HiSec",
-            "Maximum Security Focus - Extreme/MaxSec",
+            "Personal",
+            "Web/Online",
+            "Work Basic",
+            "Work Secure",
+            "Banking/Financial",
+            "Priveleged Work",
+            "Maximum Security Focus",
             "Customised"});
             this.comboBox1.Location = new System.Drawing.Point(15, 45);
             this.comboBox1.Name = "comboBox1";
@@ -140,6 +142,8 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Checked = true;
+            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Location = new System.Drawing.Point(15, 90);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(68, 17);
@@ -162,9 +166,9 @@
             this.radioButton5.AutoSize = true;
             this.radioButton5.Location = new System.Drawing.Point(15, 90);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(112, 17);
+            this.radioButton5.Size = new System.Drawing.Size(155, 17);
             this.radioButton5.TabIndex = 9;
-            this.radioButton5.Text = "Only Upper/Lower";
+            this.radioButton5.Text = "Only Upper/Lower (e.g. Aa)";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // checkBox4
@@ -179,6 +183,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.checkBox4);
@@ -193,6 +198,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 160);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 13);
@@ -210,6 +216,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.radioButton7);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.radioButton5);
@@ -241,6 +248,8 @@
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.numericUpDown1);
@@ -250,14 +259,27 @@
             this.panel4.Size = new System.Drawing.Size(210, 200);
             this.panel4.TabIndex = 15;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(121, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(14, 13);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "?";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Help;
             this.label5.Location = new System.Drawing.Point(10, 20);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 13);
             this.label5.TabIndex = 5;
             this.label5.Text = "Password Use Presets";
+            this.toolTip2.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
             // 
             // label2
             // 
@@ -323,7 +345,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Help;
             this.label4.Location = new System.Drawing.Point(10, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 13);
@@ -334,6 +356,8 @@
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.helpLabel);
             this.panel3.Controls.Add(this.radioButton8);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label4);
@@ -344,6 +368,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(210, 200);
             this.panel3.TabIndex = 14;
+            // 
+            // helpLabel
+            // 
+            this.helpLabel.AutoSize = true;
+            this.helpLabel.Cursor = System.Windows.Forms.Cursors.Help;
+            this.helpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpLabel.Location = new System.Drawing.Point(150, 10);
+            this.helpLabel.Name = "helpLabel";
+            this.helpLabel.Size = new System.Drawing.Size(14, 13);
+            this.helpLabel.TabIndex = 21;
+            this.helpLabel.Text = "?";
             // 
             // radioButton8
             // 
@@ -448,6 +483,15 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // toolTip2
+            // 
+            this.toolTip2.AutoPopDelay = 5000;
+            this.toolTip2.InitialDelay = 200;
+            this.toolTip2.IsBalloon = true;
+            this.toolTip2.ReshowDelay = 100;
+            this.toolTip2.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip2.ToolTipTitle = "Password Presets";
+            // 
             // Form1
             // 
             this.AcceptButton = this.GenerateKey;
@@ -523,6 +567,9 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem presetsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label helpLabel;
+        private System.Windows.Forms.ToolTip toolTip2;
     }
 }
 
