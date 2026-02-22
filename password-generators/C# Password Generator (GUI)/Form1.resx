@@ -161,8 +161,8 @@ Based on your input to generate a customised password style with this tool.
     <value>It is not required to provide input here, and if the input is left empty, leave 'Not Applicable' selected.
 Otherwise enter a phrase, a word, or other input desired for use in the generated password.
 
-• Easy (As Written): will leave the input as in and include additional padding to make the password more secure.
-• Camel Caps (CamelCaps): will take a phraseinclude spaces and link them together, capitalising the first letter of each word.
+• Easy (As Written): will leave the input as is and include additional padding to make the password more secure.
+• Camel Caps (CamelCaps): will take a phrase including spaces and link the words together, capitalising the first letter of each word.
 • 1337Speak (1337 5Pe4|&lt;): will modify the input to match internet style 1337 speak, enhancing security of a pass word or phrase.</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
@@ -179,5 +179,22 @@ options will default to a minimum set of recommendations for you. You can then c
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>114, 17</value>
+  </metadata>
+  <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>327, 17</value>
+  </metadata>
+  <data name="label9.ToolTip" xml:space="preserve">
+    <value>Salting is the process of adding in characters randomly.
+
+Selecting a Strength of Salt will make the password more complex and harder to crack.
+
+Basic Guide:
+-Level 0 will add no salting.
+-Level 2 will add 1-2 characters a few times through the passphrase.
+-Level 4 will add random strings of characters throughout, and this process will be repeated twice.
+-Level 6 will add salt between each character, and this process will be repeated several times.</value>
+  </data>
+  <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>327, 17</value>
   </metadata>
 </root>
