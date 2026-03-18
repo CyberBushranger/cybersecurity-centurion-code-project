@@ -46,5 +46,10 @@ namespace C__Password_Generator__GUI_
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
